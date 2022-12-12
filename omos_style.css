@@ -14,23 +14,18 @@ img {
   display: block;
 }
 
-/* body */
-/* body {
-  max-width: 1200px;
-} */
 /* Footer */
 footer {
   background-color: #095949;
-  padding: 2rem 100px 2rem 100px;
-}
-
-footer section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5rem;
+  padding: 0 1rem;
 }
 
 /* Footer kontakt */
+
+.kontakt_kbh_arh {
+  margin-bottom: 4rem;
+}
+
 .adresse,
 .tlf_mail {
   margin-bottom: 2rem;
@@ -48,13 +43,7 @@ footer section {
   width: 250px;
 }
 
-.kontakt_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 610px;
-}
-
-/* kontakt tekst */
+/* kontakt tekst detaljer */
 footer p,
 h2,
 h3,
@@ -63,10 +52,17 @@ h4 {
 }
 
 section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* footer info */
+.footer_information {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: white;
+  padding: 4rem 0 4rem 0;
+  margin-bottom: 4rem;
+}
 .footer_information li {
   color: white;
   list-style-type: none;
@@ -74,29 +70,21 @@ section h2 {
   line-height: 2rem;
 }
 
-.footer_information {
-  padding-left: 3rem;
-  border-left: 1px solid;
-  border-color: white;
-}
-
 /* Nyhedsbrev */
+.tilmeld_h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 footer input {
   display: block;
   padding: 6px;
   border-style: none;
   border-radius: 10px;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 ::placeholder {
   font-size: 1rem;
-}
-#navn {
-  width: 7rem;
-}
-
-#email {
-  width: 15rem;
 }
 
 button {
@@ -108,13 +96,62 @@ button {
   border-color: white;
   border-radius: 10px;
   background-color: #095949;
-}
-
-.tilmeld {
-  display: flex;
-  place-content: center;
-  margin: 3rem 0 0 0;
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {
+  /* ---------------------Footer------------------- */
+  /* footer generelt */
+  footer {
+    padding: 2rem 100px 2rem 100px;
+  }
+  /* kontakt */
+  .kontakt_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 610px;
+  }
+  footer section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .kontakt_kbh_arh {
+    margin-bottom: 0;
+  }
+  /* info */
+  .footer_information {
+    padding-top: 0;
+    border-bottom: 0;
+    padding-left: 3rem;
+    border-left: 1px solid;
+    border-top: none;
+    border-color: white;
+  }
+  .footer_information {
+    margin-bottom: 0rem;
+  }
+  /* Nyhedsbrev */
+  footer input {
+    margin-bottom: 0;
+  }
+  .tilmeld_nyhedsbrev {
+    display: grid;
+    /* Problemer med at placerer denne i midten. løst med width på 536px, men hvorfor virker det ellers ikke? */
+    width: 536px;
+    margin-inline: auto;
+  }
+  .tilmeld_formular {
+    display: flex;
+    /* place-content: center;*/
+    /* margin: 1rem 0 0 0; */
+  }
+
+  #navn {
+    width: 7rem;
+  }
+
+  #email {
+    width: 15rem;
+  }
 }
