@@ -15,6 +15,24 @@ img {
   display: block;
 }
 
+/* ---------- CSS variabler ------------- */
+/* ----Farver----- */
+
+html {
+  --primary: #095949;
+  --baggrund: #eae5df;
+  /* syntaks
+  color: var(--primary);
+
+  (Det betyder at: var(--primary) = #095949
+   */
+}
+
+/* Body */
+body {
+  background-color: #eae5df;
+}
+
 /* Footer */
 footer {
   background-color: #095949;
