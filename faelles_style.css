@@ -34,7 +34,9 @@ body {
 
 /* Main */
 main {
-  width: 0.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 /* Footer */
