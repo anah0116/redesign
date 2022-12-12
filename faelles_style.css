@@ -6,7 +6,6 @@
 }
 body {
   font-family: "pt_serifregular", sans-serif;
-  background-color: #eae5df;
 }
 
 img {
@@ -30,12 +29,17 @@ html {
 
 /* Body */
 body {
-  background-color: #eae5df;
+  background-color: var(--baggrund);
+}
+
+/* Main */
+main {
+  width: 0.5rem;
 }
 
 /* Footer */
 footer {
-  background-color: #095949;
+  background-color: var(--primary);
   padding: 0 1rem;
 }
 
