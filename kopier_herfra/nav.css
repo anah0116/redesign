@@ -1,0 +1,25 @@
+/* ----- MENU ----- */
+/* -------- Nav ---------- */
+.header_nav_ul {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+  font-size: 1rem;
+  list-style-type: none;
+}
+.header_nav_ul li {
+  flex-basis: 100px;
+  white-space: nowrap;
+}
+
+header a {
+  text-decoration: none;
+}
+
+/* -------- Logo menu ---------- */
+#logo {
+  height: 100px;
+  width: auto;
+}
