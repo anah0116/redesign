@@ -85,12 +85,13 @@ nav ul li a {
 /* Video */
 
 video {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   aspect-ratio: 16/9;
+  margin-top: 1rem;
 }
 
-.div{
+.div {
   aspect-ratio: 16/9;
 }
 /* Burger menu */
