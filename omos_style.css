@@ -1,157 +1,99 @@
-/*-----------------reset-----------------------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main {
+  margin-bottom: 5rem;
 }
-body {
-  font-family: "pt_serifregular", sans-serif;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Copy */
+main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
 }
 
-/* Footer */
-footer {
-  background-color: #095949;
-  padding: 0 1rem;
-}
-
-/* Footer kontakt */
-
-.kontakt_kbh_arh {
-  margin-bottom: 4rem;
-}
-
-.adresse,
-.tlf_mail {
-  margin-bottom: 2rem;
-}
-
-.tlf_mail {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  width: 250px;
-}
-
-.tider_dage {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  width: 250px;
-}
-
-/* kontakt tekst detaljer */
-footer p,
-h2,
-h3,
-h4 {
-  color: white;
-}
-
-section h2 {
-  margin-bottom: 2rem;
-}
-
-/* footer info */
-.footer_information {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: white;
-  padding: 4rem 0 4rem 0;
-  margin-bottom: 4rem;
-}
-.footer_information li {
-  color: white;
-  list-style-type: none;
-  text-decoration: underline;
-  line-height: 2rem;
-}
-
-/* Nyhedsbrev */
-.tilmeld_h2 {
-  font-size: 1rem;
+main h1 {
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
-}
-footer input {
-  display: block;
-  padding: 6px;
-  border-style: none;
-  border-radius: 10px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
-::placeholder {
-  font-size: 1rem;
+  text-align: center;
 }
 
-button {
-  display: block;
-  font-size: 1rem;
-  padding: 6px 3rem;
-  color: white;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  background-color: #095949;
-  cursor: pointer;
+main p {
+  font-family: "Martel Sans", sans-serif;
 }
 
-@media (min-width: 800px) {
-  /* ---------------------Footer------------------- */
-  /* footer generelt */
-  footer {
-    padding: 2rem 100px 2rem 100px;
-  }
-  /* kontakt */
-  .kontakt_grid {
+.under_skrift {
+  font-family: "Cormorant Garamond", serif;
+
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+/* knap */
+.knap_grid {
+  display: grid;
+  place-content: center;
+}
+
+.knap {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+/* faktaboks */
+.faktaboks {
+  background-color: white;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+}
+.faktaboks h2 {
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.faktaboks ul {
+  list-style: disc;
+  margin: 0 0 0 7rem;
+}
+
+/* Omos titel */
+#omos_titel p {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+#omos_titel {
+  margin: 3rem 0 3rem 0;
+}
+
+/*-- klasser --*/
+.omos_tekstboks {
+  padding-left: 2rem;
+  border-left: 2px solid var(--primary);
+}
+.billede_sted1 {
+  aspect-ratio: 2/3;
+  height: 800px;
+  background-color: black;
+}
+.billede_sted2 {
+  aspect-ratio: 2/3;
+  height: 800px;
+  background-color: black;
+}
+
+.under_skrift {
+  margin: 0 0 1rem 0;
+}
+
+#omos_titel .siden {
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 600px) {
+  .omos_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 610px;
-  }
-  footer section {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
-  }
-  .kontakt_kbh_arh {
-    margin-bottom: 0;
-  }
-  /* info */
-  .footer_information {
-    padding-top: 0;
-    border-bottom: 0;
-    padding-left: 3rem;
-    border-left: 1px solid;
-    border-top: none;
-    border-color: white;
-  }
-  .footer_information {
-    margin-bottom: 0rem;
-  }
-  /* Nyhedsbrev */
-  footer input {
-    margin-bottom: 0;
-  }
-  .tilmeld_nyhedsbrev {
-    display: grid;
-    /* Problemer med at placerer denne i midten. løst med width på 536px, men hvorfor virker det ellers ikke? */
-    width: 536px;
-    margin-inline: auto;
-  }
-  .tilmeld_formular {
-    display: flex;
-    /* place-content: center;*/
-    /* margin: 1rem 0 0 0; */
-  }
-
-  #navn {
-    width: 7rem;
-  }
-
-  #email {
-    width: 15rem;
+    gap: 5rem;
   }
 }
