@@ -20,7 +20,7 @@ function toggleMenu() {
     // sæt btn.textContent til "Menu", hvis menuShown er "false"
     btn.textContent = "Menu";
   }
-  // "toggleMenu()" slutter her
+  // "toggleMenu()" slutter her:
 }
 // Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
 btn.addEventListener("click", toggleMenu);
