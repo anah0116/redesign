@@ -26,7 +26,7 @@ html {
   (Det betyder at: var(--primary) = #095949
    */
 }
-
+/* ----- MENU ----- */
 /* -------- Nav ---------- */
 .header_nav_ul {
   position: sticky;
@@ -50,4 +50,7 @@ header a {
 #logo {
   height: 100px;
   width: auto;
+}
+/* ----- FORSIDE ----*/
+.forsideimg {
 }
