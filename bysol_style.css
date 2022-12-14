@@ -1,14 +1,19 @@
 h1 {
   text-align: center;
-  font-family: Montserrat;
-  font-weight: lighter;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
   margin-top: 5rem;
 }
 .grid_2-2 p {
   text-align: center;
+  font-family: Cormorant Garamond, serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 main h2 {
   text-align: center;
+  font-weight: lighter;
+  font-family: Montserrat, sans-serif;
 
   margin-top: 2rem;
   color: black;
