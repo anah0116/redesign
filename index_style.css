@@ -26,31 +26,44 @@ html {
   (Det betyder at: var(--primary) = #095949
    */
 }
+
+/* Forside billeder */
+
+.stol {
+  background-image: url("imgs/asset15.webp");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
 /* ----- MENU ----- */
-/* -------- Nav ---------- */
+nav {
+  right: -200vw;
+  transition: right 1s ease-in;
+}
+
+nav.active {
+  right: 0;
+  transition: right 1s ease-in;
+}
+
 .header_nav_ul {
-  position: sticky;
   display: flex;
   justify-content: space-around;
-  gap: 50px;
+  list-style: none;
   align-items: center;
-  font-size: 1rem;
-  list-style-type: none;
-}
-.header_nav_ul li {
-  flex-basis: 100px;
-  white-space: nowrap;
 }
 
-header a {
+nav ul li a {
   text-decoration: none;
+  color: black;
 }
 
-/* -------- Logo menu ---------- */
-#logo {
+.header_nav_ul .logo {
   height: 100px;
   width: auto;
 }
+
 /* ----- FORSIDE ----*/
 
 .grid1 {
@@ -69,6 +82,68 @@ header a {
   grid-row: 1/2;
 }
 
+/* Video */
+
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin-top: 1rem;
+}
+
+.div {
+  aspect-ratio: 16/9;
+}
+/* Burger menu */
+
+.toggle_btn {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: block;
+  z-index: 100;
+}
+
+.toggle_btn.active {
+  right: 420px;
+  transition: right 1s ease-in;
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 50vh;
+    padding-top: 50%;
+  }
+
+  .toggle_btn {
+    display: block;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* nav header_nav_ul {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    flex-basis: 201px;
+  } */
+
+  nav ul li,
+  nav ul li a {
+    display: inline-block;
+  }
+}
+
 @media (min-width: 600px) {
   /* ----- FORSIDE ----*/
   .forsideh1_1 {
@@ -85,5 +160,12 @@ header a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
+  }
+
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    aspect-ratio: 16/9;
   }
 }
