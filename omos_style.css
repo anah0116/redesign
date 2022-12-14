@@ -1,16 +1,50 @@
+/*-----------------reset-----------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "pt_serifregular", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* order */
+.omos_grid {
+  display: grid;
+}
+/* .order-1 {
+  order: 1;
+}
+
+.order1 {
+  order: 1;
+} */
+
+/*  */
+
 main {
   margin-bottom: 5rem;
+  padding: 1rem; /* kun på mobil */
 }
 /* Copy */
 main h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: black;
+
+  /* kun på mobil */
+  /* margin-top: 2rem; */
 }
 
 main h1 {
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -39,11 +73,20 @@ main p {
   margin-top: 1rem;
   text-decoration: none;
 }
+
+.knap:hover {
+  color: var(--baggrund);
+  background-color: var(--primary);
+}
 /* faktaboks */
 .faktaboks {
   background-color: white;
   border: 2px solid var(--primary);
   border-radius: 30px;
+  padding: 1rem;
+
+  /* kun mobil: */
+  margin: 2rem 0 2rem 0;
 }
 .faktaboks h2 {
   text-align: center;
@@ -63,13 +106,16 @@ main p {
 }
 
 #omos_titel {
-  margin: 3rem 0 3rem 0;
+  margin: 3rem 0 4rem 0;
 }
 
 /*-- klasser --*/
 .omos_tekstboks {
   padding-left: 2rem;
   border-left: 2px solid var(--primary);
+
+  /* kun mobil: */
+  margin: 2rem 0 2rem 0;
 }
 .billede_sted1 {
   aspect-ratio: 2/3;
@@ -84,6 +130,8 @@ main p {
 
 .under_skrift {
   margin: 0 0 1rem 0;
+  font-style: italic;
+  font-weight: bold;
 }
 
 #omos_titel .siden {
@@ -91,9 +139,26 @@ main p {
   font-weight: 700;
 }
 @media (min-width: 600px) {
+  /* rettelser efter "kun på mobil" */
+
+  .omos_tekstboks {
+    margin: 0;
+  }
+  .faktaboks {
+    margin: 0;
+  }
+  /* .order1 {
+    order: 0;
+  } */
+
+  /* grids */
   .omos_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
 }
+
+/* -----------------------------MENUUUU----------------------------- */
+/* ----- MENU ----- */
+/* -------- Nav ---------- */
