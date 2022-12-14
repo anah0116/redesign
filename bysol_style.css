@@ -1,10 +1,56 @@
-@media (min-width: 800px) {
-  .grid_2-1 {
+h1 {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+.grid_2-2 p {
+  text-align: center;
+  font-family: Cormorant Garamond, serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+main h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-family: Montserrat, sans-serif;
+
+  margin-top: 2rem;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .header_nav_ul {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    font-size: 1rem;
+    list-style-type: none;
+  }
+  .header_nav_ul li {
+    flex-basis: 100px;
+    white-space: nowrap;
+  }
+
+  header a {
+    text-decoration: none;
+  }
+
+  /* -------- Logo menu ---------- */
+  #logo {
+    height: 100px;
+    width: auto;
+  }
+
+  .grid_2-2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
     margin-left: 50px;
     padding-bottom: 50px;
-    column-gap: 5rem;
+    column-gap: 10rem;
   }
   .order {
     order: -1;
@@ -12,10 +58,12 @@
     margin-right: 20px;
     gap: 10px;
   }
-  h1 {
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  .skaenk {
+  }
+  .skaenk2 {
+    margin-bottom: 4rem;
+  }
+  .tekst {
+    margin-bottom: 2rem;
   }
 }
