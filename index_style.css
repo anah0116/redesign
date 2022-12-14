@@ -38,6 +38,7 @@ h2 {
 /* style */
 
 /* ----- MENU ----- */
+/***
 nav {
   right: -200vw;
   transition: right 1s ease-in;
@@ -64,7 +65,69 @@ nav ul li a {
   height: 100px;
   width: auto;
 }
+**/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--baggrund);
+}
+header nav ul {
+  display: flex;
+  list-style: none;
 
+  /* align-items: center; */
+  gap: 4rem;
+}
+
+header nav ul a {
+  color: black;
+  text-decoration: none;
+}
+header img {
+  border-radius: 0;
+  width: 6rem;
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------- Menu på mobil ---------------------*/
+@media (max-width: 800px) {
+  nav {
+    --less-than: 800;
+    --burger-lines: #000000;
+    --burger-border: #000000;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+  }
+  header a {
+    text-decoration: none;
+    /* color: #e6d1b5;
+    text-shadow: 2px 2px #730202;
+    font-size: 2rem;
+    font-family: "courier_prim";
+    font-weight: 700; */
+    padding: 50px;
+  }
+
+  header {
+    position: static;
+  }
+}
+@media (min-width: 800px) {
+  /*------------------- Menu ---------------------*/
+
+  header {
+    padding: 10px;
+  }
+}
 /* ----- FORSIDE ----*/
 
 .grid1 {
