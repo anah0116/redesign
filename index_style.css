@@ -26,7 +26,15 @@ html {
   (Det betyder at: var(--primary) = #095949
    */
 }
+/* Tekst */
+p {
+  font-family: "Martel Sans", sans-serif;
+}
 
+h2 {
+  text-align: center;
+  font-family: "Martel Sans", sans-serif;
+}
 /* Forside billeder */
 
 .stol {
@@ -84,9 +92,12 @@ nav ul li a {
 
 .sol {
   background-color: var(--primary);
-  width: 597.5px;
-  height: 336px;
+  width: 450px;
+  height: 253px;
   margin-top: 1rem;
+  color: var(--baggrund);
+  text-align: left;
+  padding: 3rem;
 }
 
 /* Video */
@@ -131,5 +142,15 @@ video {
     display: block;
     height: auto;
     width: auto;
+  }
+
+  .sol {
+    background-color: var(--primary);
+    width: 597.5px;
+    height: 336px;
+    margin-top: 1rem;
+    color: var(--baggrund);
+    text-align: left;
+    padding: 3rem;
   }
 }
