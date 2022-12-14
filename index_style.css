@@ -35,14 +35,7 @@ h2 {
   text-align: center;
   font-family: "Martel Sans", sans-serif;
 }
-/* Forside billeder */
-
-.stol {
-  background-image: url("imgs/asset15.webp");
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
+/* style */
 
 /* ----- MENU ----- */
 nav {
@@ -92,8 +85,8 @@ nav ul li a {
 
 .sol {
   background-color: var(--primary);
-  width: 450px;
-  height: 253px;
+  width: 100%;
+  height: auto;
   margin-top: 1rem;
   color: var(--baggrund);
   text-align: left;
@@ -128,14 +121,15 @@ video {
   .grid1_1_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr; */
-    gap: 5px;
+    gap: 10px;
   }
 
   .forsideimg {
