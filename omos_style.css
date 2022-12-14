@@ -14,22 +14,39 @@ img {
   display: block;
 }
 
-/* order */
-.omos_grid {
-  display: grid;
+@media (max-width: 600px) {
+  /* order */
+  .omos_grid {
+    display: grid;
+  }
+  .order1 {
+    order: 1;
+  }
+  .order2 {
+    order: 2;
+  }
+  .order3 {
+    order: 3;
+  }
+  .order4 {
+    order: 4;
+  }
+  .order5 {
+    order: 5;
+  }
+  .order6 {
+    order: 6;
+  }
+  .order7 {
+    order: 7;
+  }
+  .order8 {
+    order: 8;
+  }
 }
-/* .order-1 {
-  order: 1;
-}
-
-.order1 {
-  order: 1;
-} */
-
 /*  */
 
 main {
-  margin-bottom: 5rem;
   padding: 1rem; /* kun på mobil */
 }
 /* Copy */
@@ -86,22 +103,30 @@ main p {
   padding: 1rem;
 
   /* kun mobil: */
-  margin: 2rem 0 2rem 0;
+  margin: 0rem 0 0rem 0;
 }
 .faktaboks h2 {
   text-align: center;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .faktaboks ul {
+  display: grid;
+  gap: 1.3rem;
   list-style: disc;
-  margin: 0 0 0 7rem;
+  margin: 0 0 0 3rem;
+}
+
+.faktaboks ul li {
+  font-size: 1rem;
+  font-family: "Martel Sans", sans-serif;
+  line-height: 1.5rem;
 }
 
 /* Omos titel */
 #omos_titel p {
   text-align: center;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Martel Sans", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -115,7 +140,7 @@ main p {
   border-left: 2px solid var(--primary);
 
   /* kun mobil: */
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 6rem 0;
 }
 .billede_sted1 {
   aspect-ratio: 2/3;
@@ -147,9 +172,10 @@ main p {
   .faktaboks {
     margin: 0;
   }
-  /* .order1 {
-    order: 0;
-  } */
+
+  main {
+    margin-bottom: 5rem;
+  }
 
   /* grids */
   .omos_grid {
