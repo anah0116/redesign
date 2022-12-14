@@ -82,6 +82,13 @@ nav ul li a {
   grid-row: 1/2;
 }
 
+.sol {
+  background-color: var(--primary);
+  width: 597.5px;
+  height: 336px;
+  margin-top: 1rem;
+}
+
 /* Video */
 
 video {
@@ -93,55 +100,6 @@ video {
 
 .div {
   aspect-ratio: 16/9;
-}
-/* Burger menu */
-
-.toggle_btn {
-  position: absolute;
-  top: 40px;
-  right: 20px;
-  display: block;
-  z-index: 100;
-}
-
-.toggle_btn.active {
-  right: 420px;
-  transition: right 1s ease-in;
-}
-
-@media (max-width: 850px) {
-  nav {
-    display: inline-block;
-    position: absolute;
-    background-color: white;
-    height: 100vh;
-    width: 50vh;
-    padding-top: 50%;
-  }
-
-  .toggle_btn {
-    display: block;
-  }
-
-  nav li {
-    display: inline-block;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  /* nav header_nav_ul {
-    display: flex;
-    flex: 1 1 100%;
-    flex-flow: column;
-    flex-basis: 201px;
-  } */
-
-  nav ul li,
-  nav ul li a {
-    display: inline-block;
-  }
 }
 
 @media (min-width: 600px) {
@@ -165,7 +123,13 @@ video {
   .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
     gap: 5px;
-    aspect-ratio: 16/9;
+  }
+
+  .forsideimg {
+    display: block;
+    height: auto;
+    width: auto;
   }
 }
